@@ -7,6 +7,9 @@
         --main-color: #1BAE70; /* green regular */
         --main-color-dark: #06752E; /* green dark */
         --main-color-light: #5cd09f; /* green light */
+        --white: #FFFFFFFF;
+        --green-transparent50: rgba(27, 174, 112, 0.5); /* green light */
+        /* green light */
     }
 
 
@@ -73,6 +76,9 @@
     .main-color {
         color: var(--main-color);
     }
+
+    /*<a> link tage color */
+
 
     .title-color-main {
         color: var(--main-color);
@@ -155,6 +161,13 @@
         color: white;
 
     }
+
+    .bg-green-transparent {
+        background: var(--green-transparent50) !important;
+        color: white !important;
+
+    }
+
 
 
     /*team page style*/
