@@ -1,0 +1,305 @@
+    /*main light color ----> #5cd09f (green light ) */
+    /*main color ----> #1BAE70 (green regular ) */
+    /*main dark color ----> #06752E (green dark ) */
+
+
+    :root {
+        --main-color: #1BAE70; /* green regular */
+        --main-color-dark: #06752E; /* green dark */
+        --main-color-light: #5cd09f; /* green light */
+    }
+
+
+    /*default selection color */
+
+    ::-moz-selection { /* Code for Firefox */
+        color: red;
+        background: var(--main-color-dark);
+    }
+
+    ::selection {
+        color: white;
+        background: var(--main-color);
+    }
+
+
+    * {
+
+    }
+
+    .active-color {
+        color: var(--main-color) !important;
+        text-decoration: underline;
+        /*border-bottom: 2px solid #00ADB5;*/
+    }
+
+    .btn-bg-primary {
+        background-color: var(--main-color) !important;
+        border-radius: 7px !important;
+        padding: 5px 20px 5px 20px !important;
+        color: white !important;
+        border: 2px solid transparent !important;
+        text-align: center !important;
+        vertical-align: middle;
+
+    }
+
+    .btn-bg-primary:hover {
+        background-color: var(--main-color-dark) !important;
+        border-radius: 7px !important;
+        padding: 5px 20px 5px 20px !important;
+        color: white !important;
+
+        border: 2px solid transparent !important;
+    }
+
+    .btn-bg-primary-active {
+        border: 4px solid #66F6FD !important;
+    }
+
+    .nav-link {
+        font-size: 20px !important;
+    }
+
+    .nav-link:hover {
+        color: var(--main-color) !important;
+    }
+
+    /*logo styling*/
+    .navbar-brand img {
+        height: 60px
+    }
+
+    .main-color {
+        color: var(--main-color);
+    }
+
+    .title-color-main {
+        color: var(--main-color);
+    }
+
+    .title-color-main-dark {
+        color: var(--main-color-dark);
+    }
+
+    .title-color-main-light {
+        color: #5cd09f;
+    }
+
+    .our-analysis {
+
+    }
+
+    .our-analysis .card {
+        margin: 100px 0px 0px 0px;
+
+    }
+
+    .our-analysis .card .card-footer {
+        position: absolute;
+        top: 70%;
+        left: 25%;
+        background-color: white;
+        border: none;
+    }
+
+    .analysis-rounded {
+        width: 200px;
+        border-radius: 100%;
+        height: 200px;
+        position: absolute;
+        top: -40%;
+        left: 14%;
+    }
+
+
+    .analysis-rounded span {
+        color: #00ADB5 !important;
+        font-size: 50px;
+    }
+
+    .our-analysis .card .card-footer h5 {
+        /*letter-spacing: 3px;*/
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: lighter;
+
+    }
+
+    .pricing-banner {
+        transform: rotate(-45deg); /* Equal to rotateZ(45deg) */
+        background-color: pink;
+        position: absolute;
+        top: 10%;
+        left: -32%;
+        width: 100%;
+        font-size: 12px;
+        padding: 3px;
+        background-color: #00ADB5 !important;
+    }
+
+
+    .bg-green-light {
+        background: var(--main-color-light) !important;
+        color: white !important;
+    }
+
+    .bg-green-regular {
+        background: var(--main-color) !important;
+        color: white !important;
+
+    }
+
+    .bg-green-dark {
+        background: var(--main-color-dark);
+        color: white;
+
+    }
+
+
+    /*team page style*/
+
+    .team-members-card {
+        margin: 100px 0px 0px 0px;
+
+    }
+
+    .team-members-card .card-footer {
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        background-color: white;
+        border: none;
+    }
+
+    .profile-image {
+        width: 160px;
+        border-radius: 100%;
+        height: 160px;
+        position: absolute;
+        top: -20%;
+        left: 22%;
+    }
+
+    .profile-image2 {
+        width: 160px;
+        border-radius: 100%;
+        height: 160px;
+        position: absolute;
+        top: -0%;
+        left: 22%;
+    }
+
+    .gray-hr {
+        background-color: rgba(17, 17, 17, 0.50);
+    }
+
+    .fa-twitter:hover {
+        color: #00acee;
+        cursor: pointer;
+    }
+
+    .fa-facebook:hover {
+        color: #3b5998;
+        cursor: pointer;
+    }
+
+    .fa-youtube:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+    .fa-google:hover {
+        color: #075e54;
+        cursor: pointer;
+
+    }
+
+    .shadow-lg-hover:hover {
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important
+    }
+
+
+    /*main custom css of this project*/
+
+    /*vertical space */
+    .vertical-space {
+        height: 50px;
+    }
+
+    .home-about-us {
+        background-size: cover;
+        background: url("../images/about_us.jpg") no-repeat;
+        background-attachment: fixed;
+    }
+
+    .icon-border {
+        border-radius: 100%;
+        font-size: 50px;
+        color: var(--main-color);
+    }
+
+    .icon-border:hover {
+        color: var(--main-color-dark);
+    }
+
+    .border-main-color {
+        border: 6px solid white;
+        border-left: 3px solid white;
+        border-right: 3px solid white;
+    }
+
+    .home-about-us .about-card:hover .icon-border {
+        color: var(--main-color-dark);
+
+    }
+
+    /*why daily yoga start*/
+    .why-daily-yoga .yoga-type-tiles p span {
+        color: var(--main-color);
+    }
+
+    /*why daily yoga end*/
+
+
+    /*our classes start*/
+
+    .our-classes-hover-card {
+        background: rgba(27, 174, 112, 0.80);
+        height: 20.5rem;
+        /*display: none;*/
+        position: relative;
+        top: -204%;
+        /*left: -104%;*/
+    }
+
+    /*.our-classes-hover-card:hover{*/
+    /*    background: green;*/
+    /*    display: block;*/
+    /*}*/
+    .our-classes-cards {
+        position: relative;
+        height: 26rem;
+        overflow: hidden;
+    }
+
+    .our-classes-cards:hover .our-classes-hover-card {
+        display: block;
+        position: relative;
+        top: -104%;
+        left: 0%;
+        transition: 1s ease;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .our-classes-teachers {
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        background-position: center;
+    }
+
+    /*our classes end */
