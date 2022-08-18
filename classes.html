@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    bootstrap css file -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+
+    <!--    custom css file  -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- slider css -->
+    <link rel="stylesheet" href="./assets/css/slider.css">
+
+    <!--    fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Online Health Coach</title>
+</head>
+<body>
+<!--main div start-->
+<div class="container-fluid">
+    <!-- navbar row start  -->
+    <div class="row">
+        <!--navbar start-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white  shadow fixed-top"
+             style="padding: 0px !important; margin: 0px !important;">
+            <div class="container-fluid">
+                <a class="navbar-brand me-5" href="./index.html">
+                    <img src="./assets/images/logo/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!-- home  -->
+                        <li class="nav-item mx-4 ">
+                            <a class="nav-link  fs-4" aria-current="page" href="./index.html">Home</a>
+                        </li>
+
+                        <!-- about us  -->
+                        <li class="nav-item mx-4">
+                            <a class="nav-link fs-4" href="./about_us.html">About Us</a>
+                        </li>
+
+                        <!-- events  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-4" href=""
+                               id="navbarDropdown-events" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Events
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-events">
+                                <li><a class="dropdown-item" href="./events.html">All Events</a></li>
+                                <li><a class="dropdown-item" href="./event_details.html">Even Details</a></li>
+                            </ul>
+                        </li>
+
+
+                        <!-- classes  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-4  active-color" href=""
+                               id="navbarDropdown-classes" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Classes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-classes">
+                                <li><a class="dropdown-item" href="./classes.html">All Classes</a></li>
+                                <li><a class="dropdown-item" href="./class_details.html">Classes Details</a></li>
+
+                            </ul>
+                        </li>
+
+                        <!-- contact us-->
+                        <li class="nav-item col-5 col-sm-3 d-block  d-lg-none">
+                            <a href="./contact_us.html" class="nav-link btn    text-white btn-bg-primary">Start
+                                                                                                          Learning</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="./contact_us.html"
+                   class="btn btn-info mx-auto d-none d-lg-block text-white btn-bg-primary">Start Learning</a>
+            </div>
+        </nav>
+        <!--navbar end-->
+    </div>
+    <!-- navbar row end  -->
+
+    <!-- vertical space  -->
+    <div class="vertical-space"></div>
+    <br>
+
+    <!-- main page start  -->
+    <div class="container"
+         style="background: url('./assets/images/classes/bg-1.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: bottom    ;">
+        <!-- vertical space  -->
+        <div class="vertical-space"></div>
+
+        <div class="row mt-5">
+            <div class="col-12 bg-green-transparent text-center rounded-3">
+                <h1>Our Classes</h1>
+                <p class=" mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                                    luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                                    mattis, pulvinar dapibus leo. ullamcorper mattis, pulvinar dapibus leo. Lorem
+                                    ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                                    mattis, pulvinar dapibus leo</p>
+            </div>
+
+            <!-- vertical space  -->
+            <div class="vertical-space"></div>
+
+
+        </div>
+    </div>
+    <!-- main page end  -->
+
+    <!-- our classes cards start  -->
+    <div class="container bg-light">
+
+        <div class="row">
+            <h2 class="text-center mt-2 title-color-main-light">Our Classes</h2>
+            <p class="text-center">May Help You?</p>
+        </div>
+
+        <!-- all cards div start -->
+        <div class="row">
+            <!-- first 3 -->
+            <div class="col-12 col-lg-4 shadow our-classes-cards border border-5 border-white m-0 p-0">
+                <a href="./class_details.html" class="text-white text-decoration-none row">
+                    <div class="row m-0 p-0"
+                         style="background-image: url('./assets/images/our-classes/card-bg-2.jpg'); background-size: cover; height: 20rem">
+
+                    </div>
+                    <div class="row bg-white text-center m-0 p-0" style="height: 6rem">
+                        <h4 class="title-color-main-dark mt-3">Pranayama Classes</h4>
+                        <div class="col-5 ps-4 text-start">
+                            <p>16, Aug 2022</p>
+                        </div>
+                        <div class="col-7 pe-4 text-end">
+                            10.00 AM TO 11.00 AM
+                        </div>
+                    </div>
+
+                    <div class="our-classes-hover-card row m-0 p-0 d-flex text-white">
+                        <div class="col-6 text-center mt-3">
+                            <h5>Price $49</h5>
+                        </div>
+                        <div class="col-6 text-center mt-3">
+                            <h5>3 Months</h5>
+                        </div>
+                        <div class="col-12 text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, ipsum pretium, purus
+                            ante
+                            porttitor eros, cursus cursus diam urna a augue. Maur congue consectetur.
+                        </div>
+                        <!-- TODO: Go to personal user page  -->
+                        <a href="" class="text-white text-decoration-none">
+                            <div class="col-4 text-center our-classes-teachers mx-auto"
+                                 style="background-image: url('./assets/images/teachers/1.webp')">
+                            </div>
+                            <h4 class="text-center mx-auto">Jane</h4>
+                        </a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 shadow our-classes-cards border border-5 border-white m-0 p-0">
+                <a href="./class_details.html" class="text-white text-decoration-none row">
+                    <div class="row m-0 p-0"
+                         style="background-image: url('./assets/images/our-classes/card-bg-1.jpg'); background-size: cover; height: 20rem">
+
+                    </div>
+                    <div class="row bg-white text-center m-0 p-0" style="height: 6rem">
+                        <h4 class="title-color-main-dark mt-3">Yoga Rahashya Classes</h4>
+                        <div class="col-5 ps-4 text-start">
+                            <p>16, Aug 2022</p>
+                        </div>
+                        <div class="col-7 pe-4 text-end">
+                            10.00 AM TO 11.00 AM
+                        </div>
+                    </div>
+
+                    <div class="our-classes-hover-card row m-0 p-0 d-flex text-white">
+                        <div class="col-6 text-center mt-3">
+                            <h5>Price $49</h5>
+                        </div>
+                        <div class="col-6 text-center mt-3">
+                            <h5>3 Months</h5>
+                        </div>
+                        <div class="col-12 text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, ipsum pretium, purus
+                            ante
+                            porttitor eros, cursus cursus diam urna a augue. Maur congue consectetur.
+                        </div>
+                        <!-- TODO: Go to personal user page  -->
+                        <a href="" class="text-white text-decoration-none">
+                            <div class="col-4 text-center our-classes-teachers mx-auto"
+                                 style="background-image: url('./assets/images/teachers/2.jpg')">
+                            </div>
+                            <h4 class="text-center mx-auto">Angela</h4>
+                        </a>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 shadow our-classes-cards border border-5 border-white m-0 p-0">
+                <a href="./class_details.html" class="text-white text-decoration-none row">
+                    <div class="row m-0 p-0"
+                         style="background-image: url('./assets/images/our-classes/card-bg-3.jpg'); background-size: cover; height: 20rem">
+
+                    </div>
+                    <div class="row bg-white text-center m-0 p-0" style="height: 6rem">
+                        <h4 class="title-color-main-dark mt-3">Vinyasa Flow Classes</h4>
+                        <div class="col-5 ps-4 text-start">
+                            <p>16, Aug 2022</p>
+                        </div>
+                        <div class="col-7 pe-4 text-end">
+                            10.00 AM TO 11.00 AM
+                        </div>
+                    </div>
+
+                    <div class="our-classes-hover-card row m-0 p-0 d-flex text-white">
+                        <div class="col-6 text-center mt-3">
+                            <h5>Price $49</h5>
+                        </div>
+                        <div class="col-6 text-center mt-3">
+                            <h5>3 Months</h5>
+                        </div>
+                        <div class="col-12 text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, ipsum pretium, purus
+                            ante
+                            porttitor eros, cursus cursus diam urna a augue. Maur congue consectetur.
+                        </div>
+                        <!-- TODO: Go to personal user page  -->
+                        <a href="" class="text-white text-decoration-none">
+                            <div class="col-4 text-center our-classes-teachers mx-auto"
+                                 style="background-image: url('./assets/images/teachers/3.jpg')">
+                                <!-- <img src="./assets/images/teachers/1.webp" alt="" > -->
+                            </div>
+                            <h4 class="text-center mx-auto">Sivan</h4>
+                        </a>
+
+                    </div>
+                </a>
+            </div>
+
+            <!-- second 3 -->
+            <div class="col-12 col-lg-4 shadow our-classes-cards border border-5 border-white m-0 p-0">
+                <a href="./class_details.html" class="text-white text-decoration-none row">
+                    <div class="row m-0 p-0"
+                         style="background-image: url('./assets/images/events/card-images1.jpg'); background-size: cover; height: 20rem">
+
+                    </div>
+                    <div class="row bg-white text-center m-0 p-0" style="height: 6rem">
+                        <h4 class="title-color-main-dark mt-3">Pranayama Classes</h4>
+                        <div class="col-5 ps-4 text-start">
+                            <p>16, Aug 2022</p>
+                        </div>
+                        <div class="col-7 pe-4 text-end">
+                            10.00 AM TO 11.00 AM
+                        </div>
+                    </div>
+
+                    <div class="our-classes-hover-card row m-0 p-0 d-flex text-white">
+                        <div class="col-6 text-center mt-3">
+                            <h5>Price $49</h5>
+                        </div>
+                        <div class="col-6 text-center mt-3">
+                            <h5>3 Months</h5>
+                        </div>
+                        <div class="col-12 text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, ipsum pretium, purus
+                            ante
+                            porttitor eros, cursus cursus diam urna a augue. Maur congue consectetur.
+                        </div>
+                        <!-- TODO: Go to personal user page  -->
+                        <a href="" class="text-white text-decoration-none">
+                            <div class="col-4 text-center our-classes-teachers mx-auto"
+                                 style="background-image: url('./assets/images/teachers/1.webp')">
+                            </div>
+                            <h4 class="text-center mx-auto">Jane</h4>
+                        </a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 shadow our-classes-cards border border-5 border-white m-0 p-0">
+                <a href="./class_details.html" class="text-white text-decoration-none row">
+                    <div class="row m-0 p-0"
+                         style="background-image: url('./assets/images/events/card-images2.jpg'); background-size: cover; height: 20rem">
+
+                    </div>
+                    <div class="row bg-white text-center m-0 p-0" style="height: 6rem">
+                        <h4 class="title-color-main-dark mt-3">Yoga Rahashya Classes</h4>
+                        <div class="col-5 ps-4 text-start">
+                            <p>16, Aug 2022</p>
+                        </div>
+                        <div class="col-7 pe-4 text-end">
+                            10.00 AM TO 11.00 AM
+                        </div>
+                    </div>
+                    <div class="our-classes-hover-card row m-0 p-0 d-flex text-white">
+                        <div class="col-6 text-center mt-3">
+                            <h5>Price $49</h5>
+                        </div>
+                        <div class="col-6 text-center mt-3">
+                            <h5>3 Months</h5>
+                        </div>
+                        <div class="col-12 text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, ipsum pretium, purus
+                            ante
+                            porttitor eros, cursus cursus diam urna a augue. Maur congue consectetur.
+                        </div>
+                        <!-- TODO: Go to personal user page  -->
+                        <a href="" class="text-white text-decoration-none">
+                            <div class="col-4 text-center our-classes-teachers mx-auto"
+                                 style="background-image: url('./assets/images/teachers/2.jpg')">
+                            </div>
+                            <h4 class="text-center mx-auto">Angela</h4>
+                        </a>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 shadow our-classes-cards border border-5 border-white m-0 p-0">
+                <a href="./class_details.html" class="text-white text-decoration-none row">
+                    <div class="row m-0 p-0"
+                         style="background-image: url('./assets/images/events/card-images3.jpg'); background-size: cover; height: 20rem">
+
+                    </div>
+                    <div class="row bg-white text-center m-0 p-0" style="height: 6rem">
+                        <h4 class="title-color-main-dark mt-3">Vinyasa Flow Classes</h4>
+                        <div class="col-5 ps-4 text-start">
+                            <p>16, Aug 2022</p>
+                        </div>
+                        <div class="col-7 pe-4 text-end">
+                            10.00 AM TO 11.00 AM
+                        </div>
+                    </div>
+
+                    <div class="our-classes-hover-card row m-0 p-0 d-flex text-white">
+                        <div class="col-6 text-center mt-3">
+                            <h5>Price $49</h5>
+                        </div>
+                        <div class="col-6 text-center mt-3">
+                            <h5>3 Months</h5>
+                        </div>
+                        <div class="col-12 text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, ipsum pretium, purus
+                            ante
+                            porttitor eros, cursus cursus diam urna a augue. Maur congue consectetur.
+                        </div>
+                        <!-- TODO: Go to personal user page  -->
+                        <a href="" class="text-white text-decoration-none">
+                            <div class="col-4 text-center our-classes-teachers mx-auto"
+                                 style="background-image: url('./assets/images/teachers/3.jpg')">
+                                <!-- <img src="./assets/images/teachers/1.webp" alt="" > -->
+                            </div>
+                            <h4 class="text-center mx-auto">Sivan</h4>
+                        </a>
+
+                    </div>
+                </a>
+            </div>
+
+            <!-- third 3 -->
+            <div class="col-12 col-lg-4 shadow our-classes-cards border border-5 border-white m-0 p-0">
+                <a href="./class_details.html" class="text-white text-decoration-none row">
+                    <div class="row m-0 p-0"
+                         style="background-image: url('./assets/images/our-classes/card-bg-2.jpg'); background-size: cover; height: 20rem">
+
+                    </div>
+                    <div class="row bg-white text-center m-0 p-0" style="height: 6rem">
+                        <h4 class="title-color-main-dark mt-3">Pranayama Classes</h4>
+                        <div class="col-5 ps-4 text-start">
+                            <p>16, Aug 2022</p>
+                        </div>
+                        <div class="col-7 pe-4 text-end">
+                            10.00 AM TO 11.00 AM
+                        </div>
+                    </div>
+                    <div class="our-classes-hover-card row m-0 p-0 d-flex text-white">
+                        <div class="col-6 text-center mt-3">
+                            <h5>Price $49</h5>
+                        </div>
+                        <div class="col-6 text-center mt-3">
+                            <h5>3 Months</h5>
+                        </div>
+                        <div class="col-12 text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, ipsum pretium, purus
+                            ante
+                            porttitor eros, cursus cursus diam urna a augue. Maur congue consectetur.
+                        </div>
+                        <!-- TODO: Go to personal user page  -->
+                        <a href="" class="text-white text-decoration-none">
+                            <div class="col-4 text-center our-classes-teachers mx-auto"
+                                 style="background-image: url('./assets/images/teachers/1.webp')">
+                            </div>
+                            <h4 class="text-center mx-auto">Jane</h4>
+                        </a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 shadow our-classes-cards border border-5 border-white m-0 p-0">
+                <a href="./class_details.html" class="text-white text-decoration-none row">
+                    <div class="row m-0 p-0"
+                         style="background-image: url('./assets/images/about_us.jpg'); background-size: cover; height: 20rem">
+
+                    </div>
+                    <div class="row bg-white text-center m-0 p-0" style="height: 6rem">
+                        <h4 class="title-color-main-dark mt-3">Yoga Rahashya Classes</h4>
+                        <div class="col-5 ps-4 text-start">
+                            <p>16, Aug 2022</p>
+                        </div>
+                        <div class="col-7 pe-4 text-end">
+                            10.00 AM TO 11.00 AM
+                        </div>
+                    </div>
+                    <div class="our-classes-hover-card row m-0 p-0 d-flex text-white">
+                        <div class="col-6 text-center mt-3">
+                            <h5>Price $49</h5>
+                        </div>
+                        <div class="col-6 text-center mt-3">
+                            <h5>3 Months</h5>
+                        </div>
+                        <div class="col-12 text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, ipsum pretium, purus
+                            ante
+                            porttitor eros, cursus cursus diam urna a augue. Maur congue consectetur.
+                        </div>
+                        <!-- TODO: Go to personal user page  -->
+                        <a href="" class="text-white text-decoration-none">
+                            <div class="col-4 text-center our-classes-teachers mx-auto"
+                                 style="background-image: url('./assets/images/teachers/2.jpg')">
+                            </div>
+                            <h4 class="text-center mx-auto">Angela</h4>
+                        </a>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 shadow our-classes-cards border border-5 border-white m-0 p-0">
+                <a href="./class_details.html" class="text-white text-decoration-none row">
+                    <div class="row m-0 p-0"
+                         style="background-image: url('./assets/images/our-classes/card-bg-3.jpg'); background-size: cover; height: 20rem">
+
+                    </div>
+                    <div class="row bg-white text-center m-0 p-0" style="height: 6rem">
+                        <h4 class="title-color-main-dark mt-3">Vinyasa Flow Classes</h4>
+                        <div class="col-5 ps-4 text-start">
+                            <p>16, Aug 2022</p>
+                        </div>
+                        <div class="col-7 pe-4 text-end">
+                            10.00 AM TO 11.00 AM
+                        </div>
+                    </div>
+                    <div class="our-classes-hover-card row m-0 p-0 d-flex text-white">
+                        <div class="col-6 text-center mt-3">
+                            <h5>Price $49</h5>
+                        </div>
+                        <div class="col-6 text-center mt-3">
+                            <h5>3 Months</h5>
+                        </div>
+                        <div class="col-12 text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, ipsum pretium, purus
+                            ante
+                            porttitor eros, cursus cursus diam urna a augue. Maur congue consectetur.
+                        </div>
+                        <!-- TODO: Go to personal user page  -->
+                        <a href="" class="text-white text-decoration-none">
+                            <div class="col-4 text-center our-classes-teachers mx-auto"
+                                 style="background-image: url('./assets/images/teachers/3.jpg')">
+                                <!-- <img src="./assets/images/teachers/1.webp" alt="" > -->
+                            </div>
+                            <h4 class="text-center mx-auto">Sivan</h4>
+                        </a>
+
+                    </div>
+                </a>
+            </div>
+
+            <!-- all cards div end -->
+
+
+            <!-- vertical space  -->
+            <div class="vertical-space"></div>
+        </div>
+
+        <div class="row">
+            <a href="#"
+               class="btn btn-outline-success mx-auto col-4 col-md-2 justify-content-center fw-bold btn-bg-primary">View
+                                                                                                                    More</a>
+        </div>
+
+        <!-- vertical space  -->
+        <div class="vertical-space"></div>
+
+    </div>
+    <!-- our classes cards end  -->
+
+    <!-- vertical space  -->
+    <div class="vertical-space"></div>
+
+    <!-- Choose Classes And Start Training start  -->
+    <div class="container shadow"
+         style="background: url('./assets/images/events/ourBestEvents.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: top;">
+        <div class="row text-center">
+            <h1 class="text-white">Choose Classes And Start Training</h1>
+            <p class="mt-5 text-white" style="word-spacing: 4px">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                 elit. In sit amet purus id nunc porta fringilla.
+                                                                 Maecenas volutpat fermentum ante. Sed nibh metus,
+                                                                 mollis a dolor ut, feugiat fringilla nunc. Donec
+                                                                 consequat pretium nunc, vel feugiat purus cursus a.
+                                                                 Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                 elit. In sit amet purus id nunc porta fringilla.
+                                                                 Maecenas volutpat fermentum ante. Sed nibh metus,
+                                                                 mollis a dolor ut, feugiat fringilla nunc. Donec
+                                                                 consequat pretium nunc, vel feugiat purus cursus a.</p>
+
+
+            <a href="#" class="btn btn-outline-success mx-auto col-md-2 fw-bold btn-bg-primary mt-5">View
+                                                                                                     More</a>
+
+        </div>
+        <br>
+    </div>
+    <!-- Choose Classes And Start Training end  -->
+
+    <!-- vertical space  -->
+    <div class="vertical-space"></div>
+
+    <!-- footer section start  -->
+    <div class="container">
+        <div class="row shadow m-0 justify-content-center align-items-center d-flex py-4">
+            <div class="col-12 ">
+                <h2 class="title-color-main text-center">Subscribe to Newsletter</h2>
+                <p class="text-center">Enter your email address to register to our newsletter subscription delivered on
+                                       regular basis!</p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-lg-12 d-flex  m-0 p-0 justify-content-center align-items-center d-flex">
+                    <i class="fa-solid fa-envelope fs-1 mx-4 text-success"></i>
+                    <input type="text" class="form-control border border-success" placeholder="Email Address">
+                    <!-- <button class="btn text-success"><i class="fa-solid fa-paper-plane fs-1"></i></button> -->
+                    <button class="btn btn-success mx-3">Send</button>
+                </div>
+            </div>
+            <div class="row mt-5 mx-auto justify-content-center">
+                <div class="col-0 col-lg-5"></div>
+                <div class="col-12 col-lg-2 mx-auto justify-content-around d-flex">
+                    <i class="fa-brands fa-facebook fs-3"></i>
+                    <i class="fa-brands fa-twitter fs-3"></i>
+                    <i class="fa-brands fa-youtube fs-3"></i>
+                    <i class="fa-brands fa-google fs-3"></i>
+                </div>
+                <div class="col-0 col-lg-5"></div>
+            </div>
+
+
+            <!-- vertical space  -->
+            <div class="vertical-space"></div>
+
+            <!-- horizontal line  -->
+            <hr>
+
+            <!-- copyright section  -->
+            <div class="row">
+                <p class="col-12 col-lg-6 text-center text-lg-start">Copyright © 2022 Online Health Coach</p>
+                <p class="col-12 col-lg-6 text-center text-lg-end">Powered by UnaCreators</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end  -->
+
+
+</div>
+<!--main div end-->
+
+
+<!--bootstrap js file -->
+<script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
