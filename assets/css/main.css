@@ -316,3 +316,23 @@
     }
 
     /*our classes end */
+
+
+
+
+    /*events page start*/
+    .events_card{
+      position: relative;
+        z-index: -3;
+
+    }
+    .events_bg_img_cards_parent{
+        z-index: 1;
+        height: 13rem !important;
+    }
+    .events_bg_img_cards{
+        position: relative;
+        z-index: -1;
+        top: -140%;
+    }
+    /*events page end*/
