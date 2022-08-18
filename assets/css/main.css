@@ -323,7 +323,7 @@
     /*events page start*/
     .events_card{
       position: relative;
-        z-index: -3;
+        /*z-index: -3;*/
 
     }
     .events_bg_img_cards_parent{
